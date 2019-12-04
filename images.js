@@ -1,5 +1,5 @@
-// Array with pictures
-const pictures = [
+// Array with images
+const images = [
   {data: 1, image: "images/img1.png" },
   {data: 2, image: "images/img2.png" },
   {data: 3, image: "images/img3.png" },
@@ -11,13 +11,12 @@ const pictures = [
 ];
 
 // Duplicates array
-const allPictures = pictures.concat(pictures);
-
+const allImages = images.concat(images);
 
 const memoryWrapper = document.querySelector(".memory-game");
 
   // Create cards template 
-  const createPictures= (data, image) => {
+  const createImages= (data, image) => {
     return `<div class="memory-card" data-framework=${data}>
     <img class="front-face" src="${image}" alt="">
     <img class="back-face" src="images/front.png" alt="">
@@ -25,11 +24,11 @@ const memoryWrapper = document.querySelector(".memory-game");
   };
   
   // Render the cards to the DOM
-  const generatePictures= () => {
-    allPictures.forEach(item => {
-      const element = createPictures(item.data, item.image);
+  const generateImages= () => {
+    allImages.forEach(item => {
+      const element = createImages(item.data, item.image);
       memoryWrapper.innerHTML += element;
     });
   };
 
-  generatePictures();
+  generateImages();
