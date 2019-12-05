@@ -15,7 +15,7 @@ body {
 }
 
 body.opacity {
-    background-color: rgb(224,159,188, 0.8)
+    background-color: rgb(224,159,188, 0.8);
 }
 
 .memory-game {
@@ -31,6 +31,7 @@ body.opacity {
 
 .memory-game.opacity{
     opacity: 0.8;
+    filter: blur(5px);
 }
 
 .memory-card {
@@ -60,6 +61,10 @@ body.opacity {
     transform: rotateY(180deg);
 }
 
+.memory-card.unflip{
+    transform: rotateY(180deg);
+}
+
 .front-face, .back-face {
     position: absolute;
     width: 100%;
@@ -74,7 +79,7 @@ body.opacity {
     transform: rotateY(180deg);
 }
 
-.congratz {
+.play-again {
     position: absolute;
     z-index: 2;
     background-color: rgb(233, 138, 180);
@@ -90,10 +95,10 @@ body.opacity {
     font-size: 20px;
     cursor: pointer;
     outline: none;
-    visibility: visible;
+    visibility: hidden;
 }
 
-.congratz.visibility:hover{
+.play-again:hover{
     background-color: rgb(236, 133, 180);
     box-shadow: 0px 15px 20px rgba(236, 133, 180, 0.4);
     color: #fff;
@@ -101,7 +106,7 @@ body.opacity {
     outline: none;
 }
 
-.congratz.visibility:active{
+.play-again:active{
     background-color: rgb(236, 133, 180);
     box-shadow: 0px 15px 20px rgba(236, 133, 180, 0.4);
     color: #fff;
@@ -109,6 +114,6 @@ body.opacity {
     outline: none;
 }
 
-.congratz.visibility{
+.play-again.visible{
     visibility: visible;
 }

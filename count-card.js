@@ -1,7 +1,7 @@
 let openedCards = [];
 const body = document.querySelector('body');
 const memoryGame = document.querySelector('.memory-game');
-const congratz = document.querySelector('.congratz');
+const playAgain = document.querySelector('.play-again');
 const audioDone = new Audio('sounds/done.mp3')
 
 function countCards() {
@@ -11,7 +11,7 @@ function countCards() {
 
     if (openedCards.length === 16) {
         setTimeout(() => {
-            congratz.classList.toggle('visibility');
+            playAgain.classList.toggle('visible');
             body.classList.toggle('opacity');
             memoryGame.classList.toggle('opacity');
             audioDone.play();
