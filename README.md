@@ -10,6 +10,10 @@
 
 The assignment is to create a memory game entirely in HTML, CSS and JavaScript. 
 
+## Play The Memory
+
+https://rosa-bandet-memory.netlify.com/
+
 ## Installation
 1. Clone down the project to your computer
 
