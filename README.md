@@ -10,7 +10,7 @@
 
 The assignment is to create a memory game entirely in HTML, CSS and JavaScript. 
 
-## Play The Memory
+## Link 
 
 https://rosa-bandet-memory.netlify.com/
 
