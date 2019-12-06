@@ -2,7 +2,7 @@
     <br>
     <img src="images/front.png" alt="Rosa Bandet" width="100">
     <br>
-        Rosa Bandet Memory
+        Rosa Bandet-memory
     <br>
 </h1>
 
