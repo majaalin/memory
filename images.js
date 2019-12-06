@@ -1,34 +1,40 @@
-// Array with images
-const images = [
-  {data: 1, image: "images/img1.png" },
-  {data: 2, image: "images/img2.png" },
-  {data: 3, image: "images/img3.png" },
-  {data: 4, image: "images/img4.png" },
-  {data: 5, image: "images/img5.png" },
-  {data: 6, image: "images/img6.png" },
-  {data: 7, image: "images/img7.png" },
-  {data: 8, image: "images/img8.png" },
-];
-
-// Duplicates array
-const allImages = images.concat(images);
-
 const memoryWrapper = document.querySelector(".memory-game");
 
-  // Create cards template 
-  const createImages= (data, image) => {
-    return `<div class="memory-card" data-framework=${data}>
-    <img class="front-face" src="${image}" alt="">
-    <img class="back-face" src="images/front.png" alt="">
-    </div>`;
-  };
-  
-  // Render the cards to the DOM
-  const generateImages= () => {
-    allImages.forEach(item => {
-      const element = createImages(item.data, item.image);
-      memoryWrapper.innerHTML += element;
-    });
-  };
+// Array with images
+const images = [
+  {data: 1, image: "images/img1.png"},
+  {data: 2, image: "images/img2.png"},
+  {data: 3, image: "images/img3.png"},
+  {data: 4, image: "images/img4.png"},
+  {data: 5, image: "images/img5.png"},
+  {data: 6, image: "images/img6.png"},
+  {data: 7, image: "images/img7.png"},
+  {data: 8, image: "images/img8.png"},
+];
 
-  generateImages();
+
+// Duplicates the array
+const allImages = images.concat(images);
+
+
+// Create card template 
+function createImages(data, image) {
+  return `<div class="memory-card" data-framework=${data}>
+  <img class="front-face" src="${image}" alt="${data}">
+  <img class="back-face" src="images/front.png" alt="rosa bandet">
+  </div>`;
+};
+  
+
+// Send the cards to the DOM
+function generateImages() {
+  allImages.forEach(item => {
+    const element = createImages(item.data, item.image);
+    memoryWrapper.innerHTML += element;
+  });
+};
+
+
+// Run the generateImages function (which send the cards to the DOM)
+generateImages();
+  
