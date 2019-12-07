@@ -23,8 +23,8 @@ https://rosa-bandet-memory.netlify.com/
 2. Open the index.html file in your browser
 
 ## Testers
-- 
-- 
+- Terese Thulin
+- Maja Alin
 
 ## Code Reviews
 From X
