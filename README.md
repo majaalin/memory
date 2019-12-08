@@ -24,7 +24,7 @@ https://rosa-bandet-memory.netlify.com/
 
 ## Testers
 - Terese Thulin
-- Maja Alin
+- Emelie Petersson
 
 ## Code Reviews
 From X
