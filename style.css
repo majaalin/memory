@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(224,159,188);
+    background-color: rgb(224, 159, 188);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 body.opacity {
-    background-color: rgb(224,159,188, 0.8);
+    background-color: rgb(224, 159, 188, 0.8);
 }
 
 .memory-game {
@@ -29,11 +29,10 @@ body.opacity {
     max-width: 800px;
 }
 
-.memory-game.opacity{
+.memory-game.opacity {
     opacity: 0.8;
     filter: blur(5px);
 }
-
 
 /* styles for the memory cards */
 
@@ -42,7 +41,7 @@ body.opacity {
     height: 20vh;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform ease .3s;
+    transition: transform ease 0.3s;
     z-index: 1;
     min-width: 150px;
     min-height: 155px;
@@ -50,25 +49,26 @@ body.opacity {
     cursor: pointer;
 }
 
-.memory-card:hover{
+.memory-card:hover {
     transform: scale(1.05);
     border-radius: 10px;
 }
 
 .memory-card:active {
-    transform: scale(.97);
-    transition: transform .2s;
+    transform: scale(0.97);
+    transition: transform 0.2s;
 }
 
-.memory-card.flip{
+.memory-card.flip {
     transform: rotateY(180deg);
 }
 
-.memory-card.unflip{
+.memory-card.unflip {
     transform: rotateY(180deg);
 }
 
-.front-face, .back-face {
+.front-face,
+.back-face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -82,14 +82,13 @@ body.opacity {
     transform: rotateY(180deg);
 }
 
-
 /* styles for the play again button */
 
 .play-again {
     position: absolute;
     z-index: 2;
     background-color: rgb(233, 138, 180);
-    color: #F7EDF7;
+    color: #f7edf7;
     transition: all 0.3s ease 0s;
     position: absolute;
     width: 20vh;
@@ -104,7 +103,7 @@ body.opacity {
     visibility: hidden;
 }
 
-.play-again:hover{
+.play-again:hover {
     background-color: rgb(236, 133, 180);
     box-shadow: 0px 15px 20px rgba(236, 133, 180, 0.4);
     color: #fff;
@@ -112,7 +111,7 @@ body.opacity {
     outline: none;
 }
 
-.play-again:active{
+.play-again:active {
     background-color: rgb(236, 133, 180);
     box-shadow: 0px 15px 20px rgba(236, 133, 180, 0.4);
     color: #fff;
@@ -120,6 +119,6 @@ body.opacity {
     outline: none;
 }
 
-.play-again.visible{
+.play-again.visible {
     visibility: visible;
 }
