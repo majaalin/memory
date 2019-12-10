@@ -27,7 +27,13 @@ https://rosa-bandet-memory.netlify.com/
 - Emelie Petersson
 
 ## Code Reviews
-From X
+From Jakob Fridmar
+- Nice animation at play again.
+- Fun with sounds at every match. 
+- Good structure of javascript and easy to read. 
+- Simple css with good hierarchy.
+- Think about: remove empty files in dir.
+- Think about using strict in javascript.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
